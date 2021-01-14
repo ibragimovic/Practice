@@ -7,11 +7,12 @@ public class Group {
     String dateOfBeginning;
     int durationInMonths;
 
+
     public Group (){}
 
     public Group(Student[] students, Course course, String dateOfBeginning, int durationInMonths){
         for (int i = 0; i < students.length; i++){
-            this.students[i] = students[i];
+            students[i] = students[i];
         }
         this.course = course;
         this.dateOfBeginning = dateOfBeginning;
@@ -24,7 +25,8 @@ public class Group {
         for (int i = 0; i < students.length; i++){
             message += students[i] + "\n";
         }
-        return message + "course - " + course + ", date of the beginning - " + dateOfBeginning + ", duration - " + durationInMonths;
+        message += course.toString() + ", date of the beginning - " + dateOfBeginning + ", duration - " + durationInMonths;
+        return message;
     }
 
     public Student[] getStudents() {
@@ -61,6 +63,8 @@ public class Group {
         }
 
     }
+
+
 
 
 

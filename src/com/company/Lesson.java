@@ -5,16 +5,20 @@ import java.time.LocalTime;
 
 public class Lesson {
     LocalDate dateLesson;
+    Group group;
     Student[] studentsPresent;
     Course course;
     LocalTime timeLesson;
     boolean wasHoeWork;
     boolean wasExam;
 
+
+
     public Lesson(){}
 
-    public Lesson (LocalDate dateLesson, Student[] studentsPresent, Course course, LocalTime timeLesson, boolean wasHoeWork, boolean wasExam){
+    public Lesson (LocalDate dateLesson, Group group, Student[] studentsPresent, Course course, LocalTime timeLesson, boolean wasHoeWork, boolean wasExam){
         this.dateLesson = dateLesson;
+        this.group = group;
         for (int i = 0; i < studentsPresent.length; i++){
             if (studentsPresent[i] != null){
                 this.studentsPresent[i] = studentsPresent[i];
@@ -52,7 +56,7 @@ public class Lesson {
     }
 
     public void setStudentsPresent(Student[] studentsPresent) {
-        this.studentsPresent = studentsPresent;
+        this.studentsPresent = group.students;
     }
 
     public Course getCourse() {
@@ -85,5 +89,13 @@ public class Lesson {
 
     public void setWasExam(boolean wasExam) {
         this.wasExam = wasExam;
+    }
+
+    public Group getGroup() {
+        return group;
+    }
+
+    public void setGroup(Group group) {
+        this.group = group;
     }
 }

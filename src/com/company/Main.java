@@ -13,7 +13,13 @@ public class Main {
         Student student5 = new Student("30/04/2015", "Seitaliev", "Amir", "male", 6);
 
         Student [] students = {student1, student2, student3, student4, student5};
-        Student [] studentsPresent = {student1, student3, student5};
+        Student [] studentsPresent = new Student[students.length];
+
+        studentsPresent[0] = student1;
+        studentsPresent[1] = null;
+        studentsPresent[2] = student3;
+        studentsPresent[3] = null;
+        studentsPresent[4] = student5;
 
 
 
@@ -22,7 +28,10 @@ public class Main {
 
         Group java20 = new Group(students, java, "30/09/2020", 9);
 
-        Lesson lesson17 = new Lesson(LocalDate.now(), studentsPresent, java, LocalTime.now(), true, true);
+//       Lesson lesson17 = new Lesson(LocalDate.now(), studentsPresent, java, LocalTime.now(), true, true);
+
+//        System.out.println(lesson17);
+//        System.out.println(java);
 
 
 
