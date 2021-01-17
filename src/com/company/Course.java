@@ -4,20 +4,20 @@ public class Course {
     String name;
     String dateOfCreation;
     String ID;
-    String nameOfTeacher;
+    Teacher teacher;
 
     public Course(){}
 
-    public Course(String name, String dateOfCreation, String ID, String nameOfTeacher){
+    public Course(String name, String dateOfCreation, String ID, Teacher teacher){
         this.name = name;
         this.dateOfCreation = dateOfCreation;
         this.ID = ID;
-        this.nameOfTeacher = nameOfTeacher;
+        this.teacher = teacher;
     }
 
     @Override
     public String toString(){
-        return "Course\nname - " + name + ", date - " + dateOfCreation + ", ID - " + ID + ", name of the teacher - " + nameOfTeacher;
+        return "Course\nname - " + name + ", date - " + dateOfCreation + ", ID - " + ID + ", name of the teacher - " + teacher;
     }
 
     public String getName() {
@@ -44,17 +44,11 @@ public class Course {
         this.ID = ID;
     }
 
-    public String getNameOfTeacher() {
-        return nameOfTeacher;
+    public Teacher getTeacher() {
+        return teacher;
     }
 
-    public void setNameOfTeacher(String nameOfTeacher) {
-        this.nameOfTeacher = nameOfTeacher;
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
     }
-
-
-
-
-
-
 }

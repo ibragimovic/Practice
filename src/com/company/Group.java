@@ -6,26 +6,26 @@ public class Group {
     Course course;
     String dateOfBeginning;
     int durationInMonths;
+    Teacher teacher;
 
 
     public Group (){}
 
-    public Group(Student[] students, Course course, String dateOfBeginning, int durationInMonths){
-        for (int i = 0; i < students.length; i++){
-            students[i] = students[i];
-        }
+    public Group(Student[] students, Course course, String dateOfBeginning, int durationInMonths, Teacher teacher){
+        this.students = students;
         this.course = course;
         this.dateOfBeginning = dateOfBeginning;
         this.durationInMonths = durationInMonths;
+        this.teacher = teacher;
     }
 
     @Override
     public String toString(){
         String message = "Group:\nStudents:\n";
-        for (int i = 0; i < students.length; i++){
-            message += students[i] + "\n";
+        for (Student student : students){
+            message += student;
         }
-        message += course.toString() + ", date of the beginning - " + dateOfBeginning + ", duration - " + durationInMonths;
+        message += course.toString() + ", date of the beginning - " + dateOfBeginning + ", duration - " + durationInMonths + teacher;
         return message;
     }
 
@@ -64,9 +64,11 @@ public class Group {
 
     }
 
+    public Teacher getTeacher() {
+        return teacher;
+    }
 
-
-
-
-
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
 }

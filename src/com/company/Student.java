@@ -1,69 +1,41 @@
 package com.company;
 
-public class Student {
-    String dateOfBirth;
-    String surname;
-    String name;
-    String gender;
-    int age;
+import org.w3c.dom.ls.LSOutput;
+
+public class Student extends Person{
+
+    double academicPerformance;
+    String studentStudyDirection;
+
 
     public Student(){}
 
-    public Student(String dateOfBirth, String surname, String name, String gender, int age){
-        this.dateOfBirth = dateOfBirth;
-        this.surname = surname;
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
+    public Student(String dateOfBirth, String surname, String name, String gender, int age, double academicPerformance, String studentStudyDirection){
+        super(dateOfBirth, surname, name, gender, age);
+        this.academicPerformance = academicPerformance;
+        this.studentStudyDirection = studentStudyDirection;
     }
 
     @Override
     public String toString(){
-        return  "Student:\ndate of birth - " + dateOfBirth + ", surname - " + surname + ", name  " + name + ", gender - " + gender + ", age - " + age;
+        String message = "Student\ndate of birth - " + dateOfBirth + ", surname - " + surname + ", name - " + name + ", gender - " + gender + ", age - " + age
+                + ", academic performance - " + academicPerformance + ", direction of study - " + studentStudyDirection;
+        return message;
     }
 
-    public String getDateOfBirth() {
-        return dateOfBirth;
+    public double getAcademicPerformance() {
+        return academicPerformance;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setAcademicPerformance(double academicPerformance) {
+        this.academicPerformance = academicPerformance;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getStudentStudyDirection() {
+        return studentStudyDirection;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setStudentStudyDirection(String studentStudyDirection) {
+        this.studentStudyDirection = studentStudyDirection;
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        if(this.age > 0){
-            this.age = age;
-            return;
-        }
-        return;
-    }
-
 }
