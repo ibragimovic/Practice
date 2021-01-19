@@ -1,11 +1,11 @@
-package com.company;
+package com.company.dataTeacherStudent;
 
-import org.w3c.dom.ls.LSOutput;
+import com.company.person.Person;
 
-public class Student extends Person{
+public class Student extends Person {
 
-    double academicPerformance;
-    String studentStudyDirection;
+    private double academicPerformance;
+    private String studentStudyDirection;
 
 
     public Student(){}

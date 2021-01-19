@@ -1,12 +1,15 @@
-package com.company;
+package com.company.dataCourseGroupLesson;
+
+import com.company.dataTeacherStudent.Student;
+import com.company.dataTeacherStudent.Teacher;
 
 public class Group {
 
     Student[] students;
-    Course course;
-    String dateOfBeginning;
-    int durationInMonths;
-    Teacher teacher;
+    private Course course;
+    private String dateOfBeginning;
+    private int durationInMonths;
+    private Teacher teacher;
 
 
     public Group (){}

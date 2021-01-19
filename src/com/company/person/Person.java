@@ -1,11 +1,11 @@
-package com.company;
+package com.company.person;
 
 public class Person {
-    String dateOfBirth;
-    String surname;
-    String name;
-    String gender;
-    int age;
+    protected String dateOfBirth;
+    protected String surname;
+    protected String name;
+    protected String gender;
+    protected int age;
 
     public Person(){}
 

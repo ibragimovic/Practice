@@ -1,10 +1,12 @@
-package com.company;
+package com.company.dataCourseGroupLesson;
+
+import com.company.dataTeacherStudent.Teacher;
 
 public class Course {
-    String name;
-    String dateOfCreation;
-    String ID;
-    Teacher teacher;
+    private String name;
+    private String dateOfCreation;
+    private String ID;
+    private Teacher teacher;
 
     public Course(){}
 

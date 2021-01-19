@@ -1,4 +1,14 @@
-package com.company;
+package com.company.caller;
+
+import com.company.dataTeacherStudent.Student;
+
+import com.company.dataTeacherStudent.Teacher;
+
+import com.company.dataCourseGroupLesson.Course;
+
+import com.company.dataCourseGroupLesson.Group;
+
+import com.company.dataCourseGroupLesson.Lesson;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -31,16 +41,8 @@ public class Main {
         System.out.println(lesson17);
 
 
-            //  TASK B
-
-        FlourProducts flour1 = new FlourProducts(35, "Kyrgyzstan", 20, "Bulochka", "Kulikovskii", 0.3);
-        Alcohol alco1 = new Alcohol(500, "Kyrgyzstan", 35, "Cognac", "KYRGYZSTAN", 45, 0.7);
-        Dairy day1 = new Dairy(125, "Kyrgyzstan", 15, "Milk", "AK-SUT", 7, 0.9);
 
 
-        System.out.println(flour1);
-        System.out.println(alco1);
-        System.out.println(day1);
 
 
 

@@ -1,8 +1,10 @@
-package com.company;
+package com.company.dataTeacherStudent;
 
-public class Teacher extends Person{
-    String subjectIsTaught;
-    int yearWorkExperience;
+import com.company.person.Person;
+
+public class Teacher extends Person {
+    private String subjectIsTaught;
+    private int yearWorkExperience;
 
     public Teacher(){}
 

@@ -1,17 +1,20 @@
-package com.company;
+package com.company.dataCourseGroupLesson;
+
+import com.company.dataTeacherStudent.Student;
+import com.company.dataTeacherStudent.Teacher;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class Lesson {
-    LocalDate dateLesson;
-    Group group;
-    Student[] students;
-    Course course;
-    LocalTime timeLesson;
-    boolean wasHoeWork;
-    boolean wasExam;
-    Teacher teacher;
+    private LocalDate dateLesson;
+    private Group group;
+    private Student[] students;
+    private Course course;
+    private LocalTime timeLesson;
+    private boolean wasHoeWork;
+    private boolean wasExam;
+    private Teacher teacher;
 
 
 
