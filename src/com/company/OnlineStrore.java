@@ -5,7 +5,8 @@ public class OnlineStrore {
     private int deliveryTime;
     private int taxValue;
     private int riskLoss;
-    private Products[] products;
+
+
 
     public OnlineStrore() {}
 
@@ -53,11 +54,5 @@ public class OnlineStrore {
         this.deliveryWeightPrice = deliveryWeightPrice;
     }
 
-    public Products[] getProducts() {
-        return products;
-    }
 
-    public void setProducts(Products[] products) {
-        this.products = products;
-    }
 }

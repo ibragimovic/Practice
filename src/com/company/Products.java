@@ -13,6 +13,11 @@ public class Products {
         this.priceProducts = priceProducts;
     }
 
+    @Override
+    public String toString(){
+        return "Product\nname - " + getNameProducts() + ", weight - " + getWeightProduct() + ", price - " + getPriceProducts();
+    }
+
     public String getNameProducts() {
         return nameProducts;
     }

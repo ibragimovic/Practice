@@ -15,16 +15,37 @@ public class Main {
 
         Products [] products = {product1, product2, product3, product4, product5, product6};
 
-        double countWeight = 0;
-        for (Products product : products) {
-            countWeight += product.getWeightProduct();
+        System.out.println("Выберите товар из списка, написав true или false,  и положите в корзину.");
+
+        for (int i = 0; i < products.length; i++){
+            System.out.println( products[i]);
         }
 
+        Ozon ozon = new Ozon();
+        Amazon amazon = new Amazon();
+        Alibaba alibaba = new Alibaba();
+
+        Order order = new Order(ozon, amazon, alibaba, products);
+
+        Products[] basket = order.getShoppingBasket(products);
+
+        System.out.println("Сумма выбранных Вами товаров составит " + order.countPrice(basket) + " без учета доставки.");
 
 
 
 
-//        OnlineStrore ozon = new OnlineStrore("OZON", products, )
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
